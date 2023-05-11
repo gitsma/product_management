@@ -12,6 +12,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
         defer></script>
     <script type="module" src="./js.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -33,6 +34,10 @@
                     <div class="mb-3">
                         <label for="enterQuantity" class="form-label text-secondary">Product Quantity</label>
                         <input type="number" class="form-control" id="enterQuantity">
+                    </div>
+                    <div class="mb-3">
+                        <label for="enterURL" class="form-label text-secondary">Product Image</label>
+                        <input type="text" class="form-control" id="enterURL">
                     </div>
                     <div class="mb-3 d-flex justify-content-around align-items-center">
                         <button type="submit" class="btn btn-secondary" id="insert">Insert</button>
@@ -57,13 +62,14 @@
                     </form>
 
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-5" id="result">
                     <ul class="list-group px-3" id="findDataPlace">
                         <!-- I will create here html elements with my JS code -->
 
                     </ul>
                 </div>
-
+                <div id="placeImage"></div>
+                
             </div>
         </div>
 
